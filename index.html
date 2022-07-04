@@ -5,22 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Klod Karinjo</title>
+    <title>Document</title>
     <style>
-        h1 {
-            text-align: center;
-        }
-
-        #lgbt {
-            background: linear-gradient(to right, orange, yellow, green, cyan, blue, violet);
-            /* Standard syntax (must be last) */
-        }
-
-        #lgbt h1 {
-            text-shadow: 3px 3px 3px #000, 5px 5px 8px;
-
-        }
-
         .container {
             display: flex;
             flex-direction: column;
@@ -30,25 +16,22 @@
             justify-content: center;
         }
     </style>
-
 </head>
 
 <body>
     <div class="container">
-
         <h1 style="text-align: center;">Klodi eshte kar</h1>
-        <div">
-
+        <div>
             <button
-                onclick="document.querySelector(':root').style.colorScheme = 'dark'; document.querySelector('body').removeAttribute('id'); document.querySelector('h1').textContent = 'Klodi eshte kar ne darkmode' ">Beje
+                onclick="document.querySelector(':root').style.colorScheme = 'dark'; document.querySelector('body').removeAttribute('id'); document.querySelector('h1').textContent = 'Klodi eshte kar ne darkmode'; document.querySelector('body').style.background = null; document.querySelector('h1').style.textShadow = null;  ">Beje
                 ne dark mode</button>
             <button
-                onclick="document.querySelector(':root').style.colorScheme = 'light'; document.querySelector('body').removeAttribute('id'); document.querySelector('h1').textContent = 'Klodi eshte kar ne lightmode' ">Beje
+                onclick="document.querySelector(':root').style.colorScheme = 'light'; document.querySelector('body').removeAttribute('id'); document.querySelector('h1').textContent = 'Klodi eshte kar ne lightmode'; document.querySelector('body').style.background = null; document.querySelector('h1').style.textShadow = null;  ">Beje
                 ne light mode</button>
             <button
-                onclick="document.querySelector(':root').style.colorScheme = 'dark'; document.querySelector('h1').textContent = 'Klodi eshte kar ne lgbtmode'; document.querySelector('body').id= 'lgbt' ">Beje
+                onclick="document.querySelector(':root').style.colorScheme = 'dark'; document.querySelector('h1').textContent = 'Klodi eshte kar ne lgbtmode'; document.querySelector('body').style.background = 'linear-gradient(to right, orange, yellow, green, cyan, blue, violet)'; document.querySelector('h1').style.textShadow = '3px 3px 3px #000, 5px 5px 8px'; ">Beje
                 ne lgbt mode</button>
-    </div>
+        </div>
     </div>
 </body>
 
