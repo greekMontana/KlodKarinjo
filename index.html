@@ -11,20 +11,41 @@
             background: linear-gradient(to right, orange, yellow, green, cyan, blue, violet);
             /* Standard syntax (must be last) */
         }
+
+        #lgbt h1 {
+            text-shadow: 3px 3px 3px #000, 5px 5px 8px;
+
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 90vh;
+            align-items: center;
+            justify-content: center;
+        }
     </style>
+
 </head>
 
 <body>
-    <h1>Klodi eshte kar</h1>
-    <button
-        onclick="document.querySelector(':root').style.colorScheme = 'dark'; document.querySelector('body').removeAttribute('id'); document.querySelector('h1').textContent = 'Klodi eshte kar ne darkmode' ">Beje
-        ne dark mode</button>
-    <button
-        onclick="document.querySelector(':root').style.colorScheme = 'light'; document.querySelector('body').removeAttribute('id'); document.querySelector('h1').textContent = 'Klodi eshte kar ne lightmode' ">Beje
-        ne light mode</button>
-    <button
-        onclick="document.querySelector(':root').style.colorScheme = 'light'; document.querySelector('h1').textContent = 'Klodi eshte kar ne lgbtmode'; document.querySelector('body').id= 'lgbt' ">Beje
-        ne lgbt mode</button>
+    <div class="container">
+
+        <h1>Klodi eshte kar</h1>
+        <div">
+
+            <button
+                onclick="document.querySelector(':root').style.colorScheme = 'dark'; document.querySelector('body').removeAttribute('id'); document.querySelector('h1').textContent = 'Klodi eshte kar ne darkmode' ">Beje
+                ne dark mode</button>
+            <button
+                onclick="document.querySelector(':root').style.colorScheme = 'light'; document.querySelector('body').removeAttribute('id'); document.querySelector('h1').textContent = 'Klodi eshte kar ne lightmode' ">Beje
+                ne light mode</button>
+            <button
+                onclick="document.querySelector(':root').style.colorScheme = 'dark'; document.querySelector('h1').textContent = 'Klodi eshte kar ne lgbtmode'; document.querySelector('body').id= 'lgbt' ">Beje
+                ne lgbt mode</button>
+    </div>
+    </div>
 </body>
 
 </html>
